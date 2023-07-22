@@ -1,0 +1,54 @@
+.bigdisplay {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  padding: 40px 10px;
+  display: none;
+}
+
+.menu > a {
+  margin-right: 60px;
+  color: #777676;
+  text-decoration: none;
+}
+.menu > a:last-child {
+  margin-right: 0px;
+}
+
+.logo {
+  display: flex;
+  font-size: 30px;
+  gap: 10px;
+  align-items: center;
+}
+.signupbutton {
+  padding: 15px 30px;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: white;
+  border: 1px solid black;
+}
+.smalldisplay {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+
+  align-items: center;
+  margin: auto;
+  padding: 20px 10px;
+}
+@media (min-width: 800px) {
+  .bigdisplay {
+    display: flex;
+  }
+  .smalldisplay {
+    display: none;
+  }
+}
