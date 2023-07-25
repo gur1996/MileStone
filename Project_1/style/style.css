@@ -91,24 +91,24 @@ Banner area
 ==================*/
 
 .banner {
- display: flex;
-flex: wrap;
-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-content: center;
   margin: auto;
-  padding: 40px 10px;
+  padding: 10px;
 }
-.leftbancont{
-  width: 50%
+.leftbancont {
+  width: 100%;
 }
 .leftbancont > h1 {
   font-family: futura;
-  font-size: 53px;
+  font-size: 35px;
 }
 .para {
   padding: 0px 10px;
   border-left: 1px solid black;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
   font-family: poppins;
 }
@@ -116,34 +116,39 @@ justify-content: center;
   color: #616161;
 }
 .banbtn {
-  margin-top: 40px;
+ padding: 10px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
 }
 .banbtn1 {
-  padding: 15px 40px;
+  padding: 18px 40px;
   color: white;
   background-color: #ff5e00;
   border: none;
   font-size: 16px;
+  margin-right: 10px;
 }
 .banbtn2 {
-  padding: 13px 40px;
+  padding: 16px 40px;
   color: rgb(0, 0, 0);
   background-color: white;
   border: 1px sold black;
   font-size: 16px;
 }
 .rightbancont {
-    width: 50%;
-  margin-top: 50px;
-    padding-right: 30px;
+  width:100%;
+ padding: 15px;
+  margin-top:50px ;
   position: relative;
-  text-align: center;
+ 
 }
 .banimg1 {
-  position: absolute;
+  position:relative;
   width: 350px;
   overflow: hidden;
-  right: 80px;
+  right: 0px;
 }
 
 .banimg2 {
@@ -157,3 +162,41 @@ justify-content: center;
   position: absolute;
   right: 63px;
 }
+@media (min-width: 800px) {
+  .banner {
+    flex-direction: row;
+  }
+  .rightbancont {
+    width: 50%;
+    margin-top: 20px;
+
+       
+  }
+  .leftbancont {
+    width: 50%;
+  }
+  .leftbancont > h1 {
+    font-family: futura;
+    font-size:48px;
+  }
+  .para {
+    padding: 0px 10px;
+    border-left: 1px solid black;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: poppins;
+  }
+  .banimg1 {
+    position:absolute;
+    width: 350px;
+    overflow: hidden;
+    right: 80px;
+  }
+  .banbtn {
+    max-width: 1200px;
+    width: 100%;
+    margin: 30px auto;
+    text-align: left;
+  }
+}
+
