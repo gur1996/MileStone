@@ -12,6 +12,7 @@ Css Reset
 body {
   margin: 0;
   padding: 0;
+  background-color: #fcfcfc;
 }
 
 /*================
@@ -55,11 +56,14 @@ Navigation Menu
 
 .logo {
   display: flex;
-  font-size: 30px;
-  gap: 10px;
+  font-size: 25px;
+  font-weight: 800;
+  gap: 14px;
   align-items: center;
+  font-family: poppins;
 }
 .signupbutton {
+  margin-right: 20px;
   padding: 15px 30px;
   color: black;
   font-weight: bold;
@@ -69,7 +73,6 @@ Navigation Menu
 }
 .smalldisplay {
   max-width: 500px;
-  width: 100%;
   display: flex;
   justify-content: center;
   justify-content: space-between;
@@ -116,7 +119,7 @@ Banner area
   color: #616161;
 }
 .banbtn {
- padding: 10px;
+  padding: 10px;
   max-width: 1200px;
   width: 100%;
   margin: 50px auto;
@@ -138,17 +141,16 @@ Banner area
   font-size: 16px;
 }
 .rightbancont {
-  width:100%;
- padding: 15px;
-  margin-top:50px ;
+  width: 100%;
+  padding: 15px;
+  margin-top: 50px;
   position: relative;
- 
 }
 .banimg1 {
-  position:relative;
+  position: relative;
   width: 350px;
   overflow: hidden;
-  right: 0px;
+  right: -10px;
 }
 
 .banimg2 {
@@ -162,6 +164,12 @@ Banner area
   position: absolute;
   right: 63px;
 }
+.arrowicon{
+  position: absolute;
+  width: 80px;
+margin-left: -100px;
+  margin-top: 70px;
+}
 @media (min-width: 800px) {
   .banner {
     flex-direction: row;
@@ -169,15 +177,13 @@ Banner area
   .rightbancont {
     width: 50%;
     margin-top: 20px;
-
-       
   }
   .leftbancont {
     width: 50%;
   }
   .leftbancont > h1 {
     font-family: futura;
-    font-size:48px;
+    font-size: 48px;
   }
   .para {
     padding: 0px 10px;
@@ -187,7 +193,7 @@ Banner area
     font-family: poppins;
   }
   .banimg1 {
-    position:absolute;
+    position: absolute;
     width: 350px;
     overflow: hidden;
     right: 80px;
@@ -198,5 +204,77 @@ Banner area
     margin: 30px auto;
     text-align: left;
   }
+  .arrowicon{
+    position: absolute;
+    width: 110px;
+    margin-left: 40px;
+    margin-top: 40px;
+   
+  }
 }
 
+/*================
+Point area
+==================*/
+.pointareamain {
+  background-color: #262543;
+  margin-top: 100px;
+  
+}
+.pointarea {
+   max-width: 1200px;
+  width: 100%;
+   display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  color: white;
+
+  padding: 50px 10px;
+}
+.pointcontent > h1,
+h3,
+p {
+  font-family: poppins;
+}
+.pointcontent > h1 {
+  margin: 0px;
+  font-size: 30px;
+  font-weight: 400;
+}
+.pointcontent > h3 {
+ 
+  font-size: 18px;
+  font-weight: 400;
+}
+.pointcontent > p {
+  font-size: 10px;
+  font-weight: 300;
+}
+.pointcontent >img{
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.icon1{
+  background-color: #1cd7af;
+}
+.icon2{
+  background-color: #fc5b11;
+}
+.icon3{
+  background-color: #525bf1;
+}
+
+@media (min-width: 800px) {
+  .pointarea {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+
+  .pointcontent > p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
