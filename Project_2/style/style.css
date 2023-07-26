@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;500;600&display=swap");
+
+/*================
+Css Reset
+==================*/
+
+*,
+::after ::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fcfcfc;
+}
+
+/*================
+Banner and nav area
+==================*/
+.banconatin{
+    background-image: url("../assets/background.png");
+    background-repeat: no-repeat;
+    background-position: top-center;
+    background-size: cover;
+   }
+   nav{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+   }
+   nav> h1{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+   }
+   .banner{
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+   }
