@@ -63,7 +63,7 @@ Navigation Menu
   font-family: poppins;
 }
 .signupbutton {
-  margin-right: 20px;
+  margin-right: 30px;
   padding: 15px 30px;
   color: black;
   font-weight: bold;
@@ -164,11 +164,23 @@ Banner area
   position: absolute;
   right: 63px;
 }
-.arrowicon{
+.arrowicon {
   position: absolute;
   width: 80px;
-margin-left: -100px;
+  margin-left: -100px;
   margin-top: 70px;
+}
+.arrowimg {
+  width: 20px;
+  position: absolute;
+  bottom: -50px;
+  left: 100px;
+}
+.cricleimg {
+  width: 15px;
+  position: absolute;
+  right: 80px;
+  bottom: 40px;
 }
 @media (min-width: 800px) {
   .banner {
@@ -204,32 +216,46 @@ margin-left: -100px;
     margin: 30px auto;
     text-align: left;
   }
-  .arrowicon{
+  .arrowicon {
     position: absolute;
     width: 110px;
     margin-left: 40px;
     margin-top: 40px;
-   
+  }
+  .arrowimg {
+    width: 20px;
+    position: absolute;
+    bottom: -170px;
+  }
+  .cricleimg {
+    width: 20px;
+    position: absolute;
+    right: 50px;
+    bottom: -140px;
   }
 }
 
 /*================
 Point area
 ==================*/
-.pointareamain {
+
+.pointareamain{
+  width: 100%;
   background-color: #262543;
+  
   margin-top: 100px;
+
   
 }
 .pointarea {
-   max-width: 1200px;
+  max-width: 1200px;
   width: 100%;
-   display: flex;
+  display: flex;
   flex-direction: column;
   text-align: center;
   margin: auto;
   color: white;
-
+  gap: 30px;
   padding: 50px 10px;
 }
 .pointcontent > h1,
@@ -243,7 +269,6 @@ p {
   font-weight: 400;
 }
 .pointcontent > h3 {
- 
   font-size: 18px;
   font-weight: 400;
 }
@@ -251,22 +276,25 @@ p {
   font-size: 10px;
   font-weight: 300;
 }
-.pointcontent >img{
+.pointcontent > img {
   padding: 10px;
   border-radius: 10px;
 }
 
-.icon1{
+.icon1 {
   background-color: #1cd7af;
 }
-.icon2{
+.icon2 {
   background-color: #fc5b11;
 }
-.icon3{
+.icon3 {
   background-color: #525bf1;
 }
 
 @media (min-width: 800px) {
+  .pointareamain {
+    width: 100%;
+     }
   .pointarea {
     flex-direction: row;
     text-align: left;
@@ -277,4 +305,13 @@ p {
     font-size: 14px;
     font-weight: 300;
   }
+}
+
+
+
+
+@media (min-width: 800px) {
+
+
+
 }
