@@ -18,30 +18,129 @@ body {
 /*================
 Banner and nav area
 ==================*/
-.banconatin{
-    background-image: url("../assets/background.png");
-    background-repeat: no-repeat;
-    background-position: top-center;
-    background-size: cover;
-   }
-   nav{
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    align-items: center;
-   }
-   nav> h1{
-    color: white;
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 26px;
-   }
-   .banner{
-    display: flex;
-    max-width: 1200px;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-   }
+.banconatin {
+  background-image: url("../assets/background.png");
+  background-repeat: no-repeat;
+  background-position: top-center;
+  background-size: cover;
+}
+nav {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  padding: 10px;
+  
+}
+nav > h1 {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+}
+.menu>a{
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  margin-right: 20px;
+  font-size: 15px;
+  
+}
+.menubtn{
+  padding: 13px 20px;
+  margin-right: 10px;
+  background-color: #23a6f0;
+  border: none;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+
+
+}
+.banner {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  height:700px;
+}
+.leftban {
+  width: 50%;
+}
+.leftban > h1 {
+  font-family: sans-serif;
+  font-weight: 800;
+  color: white;
+  font-size: 50px;
+}
+.leftban > p {
+  color: white;
+  font-family: poppins;
+  font-weight: 400;
+  font-size: 15px;
+}
+.banbtn{
+  margin-top: 30px;
+  
+}
+.leftbtn {
+  padding: 17px 30px;
+  background-color: #23a6f0;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 15px;
+  margin-right: 15px;
+}
+.rightbtn{
+  padding: 17px 35px;
+  background-color: rgba(24, 143, 255, 0);
+  border: 1px solid white;
+  border-radius: 50px;
+  color: white;
+  font-size: 15px;
+}
+
+.rightban{
+  background-color: rgb(255, 255, 255);
+  padding:50px 35px;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 10px;
+  gap: 15px;
+  font-family: sans-serif;
+}
+.rightban>h2{
+  font-size: 25px;
+}
+.rightban>input{
+ 
+  padding: 12px;
+  background-color: #f9f9f9;
+  border:1px solid #ebebeb;;
+  border-radius: 5px;
+}
+.rightban>label{
+  font-size: 14px;
+  font-weight: 600;
+}
+.rightban> select{
+  width: 100%;
+  padding: 12px 12px;
+  background-color: #f9f9f9;
+  border:1px solid #ebebeb;
+  border-radius: 5px;
+}
+.Appointmentbtn{
+  padding: 13px 20px;
+  background-color: #23a6f0;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  margin-top: 15px;
+}
