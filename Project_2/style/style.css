@@ -160,18 +160,19 @@ Features area
 }
 .featureheading> h1{
   font-size: 43px;
-  font-family: sans-serif;
+  font-family: poppins;
   margin-bottom: 5px;
 }
 .featureheading >p{
   font-size: 14px;
-  font-family: sans-serif;
+  font-family: poppins;
   color: #535353;
   line-height: 20px;
   
 }
 .cards{
   display: flex;
+    flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
   font-family: sans-serif;
@@ -187,6 +188,7 @@ Features area
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   display: flex;
+
   gap: 10px;
   justify-content: center;
   align-items: center;
@@ -230,4 +232,113 @@ Features area
 }
 .test{
   margin-bottom: 100px;
+}
+
+
+/*================
+Testimonial Area
+==================*/
+.TestimonialHeading{
+  text-align: center;
+margin-top:-30px;
+margin-bottom: 40px;
+}
+.TestimonialHeading> h1{
+  font-size: 43px;
+  font-family: poppins;
+  margin-bottom: 5px;
+}
+.TestimonialHeading >p{
+  font-size: 14px;
+  font-family: poppins;
+  color: #535353;
+  line-height: 20px;
+  
+}
+.testimonials{
+  background-color: #f6f6f6;
+  padding: 70px 0px;
+  font-family: poppins;
+  
+}
+.testimonialbody{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.testcard{
+  padding: 20px 30px;
+  background-color: white;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+}
+.testcard>p{
+  font-size: 10px;
+  margin-bottom: 20px;
+  letter-spacing:0.5px;
+  color:rgb(153, 153, 153);
+}
+
+.rating{
+  width: 100px;
+}
+.userimg{
+  width: 40px;
+}
+
+/*================
+FAQ Area
+==================*/
+
+.faqhead{
+  text-align: center;
+  margin:50px 100px;
+}
+.faqhead> h1{
+  font-size: 43px;
+  font-family: poppins;
+  margin-bottom: 5px;
+}
+.faqhead >p{
+  font-size: 14px;
+  font-family: poppins;
+  color: #535353;
+  line-height: 20px;
+  
+}
+.faqbody{
+  display: grid;
+  max-width: 1200px;
+  margin: auto;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  /* border: 2px solid black; */
+  padding: 40px;
+  align-items: center;
+  font-family: poppins;
+  }
+  .faqitemshead> h5{
+    font-size: 14px;
+    margin:1px
+  }
+.faqitemshead >p{
+  font-size: 12px;
+  color: #6f6f6f;
+}
+.faqitems{
+  display: flex;
+  gap:10px
+
+}
+.arrow{
+  width: 15px;
+  height: 15px;
+}
+@media (min-width: 800px) {
+  .faqbody{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    }
+
 }
