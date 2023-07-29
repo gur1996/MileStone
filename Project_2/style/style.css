@@ -32,7 +32,6 @@ nav {
   margin: auto;
   align-items: center;
   padding: 10px;
-  
 }
 nav > h1 {
   color: white;
@@ -40,15 +39,14 @@ nav > h1 {
   font-weight: 600;
   font-size: 26px;
 }
-.menu>a{
+.menu > a {
   color: white;
   text-decoration: none;
   font-family: sans-serif;
   margin-right: 20px;
   font-size: 15px;
-  
 }
-.menubtn{
+.menubtn {
   padding: 13px 20px;
   margin-right: 10px;
   background-color: #23a6f0;
@@ -56,8 +54,6 @@ nav > h1 {
   color: white;
   font-size: 14px;
   border-radius: 5px;
-
-
 }
 .banner {
   display: flex;
@@ -65,7 +61,7 @@ nav > h1 {
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  height:700px;
+  height: 700px;
 }
 .leftban {
   width: 50%;
@@ -82,9 +78,8 @@ nav > h1 {
   font-weight: 400;
   font-size: 15px;
 }
-.banbtn{
+.banbtn {
   margin-top: 30px;
-  
 }
 .leftbtn {
   padding: 17px 30px;
@@ -95,7 +90,7 @@ nav > h1 {
   font-size: 15px;
   margin-right: 15px;
 }
-.rightbtn{
+.rightbtn {
   padding: 17px 35px;
   background-color: rgba(24, 143, 255, 0);
   border: 1px solid white;
@@ -104,9 +99,9 @@ nav > h1 {
   font-size: 15px;
 }
 
-.rightban{
+.rightban {
   background-color: rgb(255, 255, 255);
-  padding:50px 35px;
+  padding: 50px 35px;
   display: flex;
   flex-direction: column;
 
@@ -114,28 +109,27 @@ nav > h1 {
   gap: 15px;
   font-family: sans-serif;
 }
-.rightban>h2{
+.rightban > h2 {
   font-size: 25px;
 }
-.rightban>input{
- 
+.rightban > input {
   padding: 12px;
   background-color: #f9f9f9;
-  border:1px solid #ebebeb;;
+  border: 1px solid #ebebeb;
   border-radius: 5px;
 }
-.rightban>label{
+.rightban > label {
   font-size: 14px;
   font-weight: 600;
 }
-.rightban> select{
+.rightban > select {
   width: 100%;
   padding: 12px 12px;
   background-color: #f9f9f9;
-  border:1px solid #ebebeb;
+  border: 1px solid #ebebeb;
   border-radius: 5px;
 }
-.Appointmentbtn{
+.Appointmentbtn {
   padding: 13px 20px;
   background-color: #23a6f0;
   border: none;
@@ -149,41 +143,40 @@ nav > h1 {
 Features area
 ==================*/
 
-.features{
+.features {
   max-width: 1200px;
   width: 100%;
   margin: auto;
 }
-.featureheading{
+.featureheading {
   text-align: center;
-  margin:100px;
+  margin: 100px;
 }
-.featureheading> h1{
+.featureheading > h1 {
   font-size: 43px;
   font-family: poppins;
   margin-bottom: 5px;
 }
-.featureheading >p{
-  font-size: 14px;
+.featureheading > p {
+  font-size: 12px;
   font-family: poppins;
   color: #535353;
-  line-height: 20px;
-  
+  line-height: 17px;
 }
-.cards{
+.cards {
   display: flex;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
   font-family: sans-serif;
   margin-bottom: 100px;
 }
-.carditem{
+.carditem {
   background-color: white;
   border: 1px solid #8ec2f256;
   border-radius: 10px;
 }
-.cardhead{
+.cardhead {
   background-color: #8ec2f2;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -195,95 +188,92 @@ Features area
   margin: auto;
   padding: 25px 10px;
 }
-.cardhead>h4{
+.cardhead > h4 {
   color: white;
 }
-.cardhead>img{
+.cardhead > img {
   padding: 10px;
   background-color: white;
   border-radius: 50px;
   width: 30px;
   height: 30px;
 }
-.cardbody{
+.cardbody {
   padding: 10px 30px;
   background-color: white;
   border: 1px solid #8ec2f269;
   border-radius: 10px;
   margin-top: 1px;
-  
 }
 
-.cardbody>ul{
+.cardbody > ul {
   margin-left: -20px;
 }
-.cardbody>ul>li{
+.cardbody > ul > li {
   list-style: none;
   font-size: 14px;
   color: rgb(100, 100, 100);
   line-height: 23px;
   font-weight: 600;
 }
-.cardbody>span{
+.cardbody > span {
   color: #3fb1f2;
   font-size: 14px;
   margin-left: 10px;
   font-weight: 600;
 }
-.test{
+.test {
   margin-bottom: 100px;
 }
-
 
 /*================
 Testimonial Area
 ==================*/
-.TestimonialHeading{
+.TestimonialHeading {
   text-align: center;
-margin-top:-30px;
-margin-bottom: 40px;
+  margin-top: -30px;
+  margin-bottom: 40px;
 }
-.TestimonialHeading> h1{
+.TestimonialHeading > h1 {
   font-size: 43px;
   font-family: poppins;
   margin-bottom: 5px;
 }
-.TestimonialHeading >p{
-  font-size: 14px;
+.TestimonialHeading > p {
+  font-size: 12px;
   font-family: poppins;
   color: #535353;
-  line-height: 20px;
-  
+  line-height: 17px;
 }
-.testimonials{
+.testimonials {
   background-color: #f6f6f6;
   padding: 70px 0px;
   font-family: poppins;
-  
 }
-.testimonialbody{
+.testimonialbody {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
-.testcard{
+.testcard {
+  margin-top: 30px;
   padding: 20px 30px;
   background-color: white;
   border: 1px solid #ededed;
   border-radius: 5px;
 }
-.testcard>p{
+.testcard > p {
   font-size: 10px;
   margin-bottom: 20px;
-  letter-spacing:0.5px;
-  color:rgb(153, 153, 153);
+  letter-spacing: 0.5px;
+  color: rgb(153, 153, 153);
 }
 
-.rating{
+.rating {
   width: 100px;
 }
-.userimg{
+.userimg {
   width: 40px;
 }
 
@@ -291,23 +281,22 @@ margin-bottom: 40px;
 FAQ Area
 ==================*/
 
-.faqhead{
+.faqhead {
   text-align: center;
-  margin:50px 100px;
+  margin: 50px 100px;
 }
-.faqhead> h1{
+.faqhead > h1 {
   font-size: 43px;
   font-family: poppins;
   margin-bottom: 5px;
 }
-.faqhead >p{
-  font-size: 14px;
+.faqhead > p {
+  font-size: 12px;
   font-family: poppins;
   color: #535353;
-  line-height: 20px;
-  
+  line-height: 17px;
 }
-.faqbody{
+.faqbody {
   display: grid;
   max-width: 1200px;
   margin: auto;
@@ -317,28 +306,121 @@ FAQ Area
   padding: 40px;
   align-items: center;
   font-family: poppins;
-  }
-  .faqitemshead> h5{
-    font-size: 14px;
-    margin:1px
-  }
-.faqitemshead >p{
+}
+.faqitemshead > h5 {
+  font-size: 14px;
+  margin: 1px;
+}
+.faqitemshead > p {
   font-size: 12px;
   color: #6f6f6f;
 }
-.faqitems{
+.faqitems {
   display: flex;
-  gap:10px
-
+  gap: 10px;
 }
-.arrow{
+.arrow {
   width: 15px;
   height: 15px;
 }
 @media (min-width: 800px) {
-  .faqbody{
+  .faqbody {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    }
+  }
+}
 
+
+/*================
+Pricing Area
+==================*/
+
+.pricing{
+  background-color: #f6f6f6;
+  padding: 20px;
+  font-family: poppins;
+}
+.pricingcards{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px auto;
+  justify-content: center;
+  gap: 50px;
+
+}
+.pricingcarditem{
+  border: 2px solid #67c1f4;
+  padding: 15px 30px;
+  border-radius: 10px;
+  
+}
+.backcolor{
+  background-color: #252b42;
+  color: white;
+  border: none;
+  padding-top: 30px;
+  margin-top: -30px;
+}
+.pricingcarditem>h2{
+  text-align: center;
+  font-size: 23px;
+ 
+}
+.pricingcarditem>p{
+  text-align: center;
+  line-height: 16px;
+  font-size: 12px;
+}
+
+.price{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  color: #1396e2;
+  margin-bottom: 10px;
+}
+.price>h1{
+  font-size: 40px;
+  margin: 0px;
+}
+.pricepara{
+  margin-top: -4px;
+}
+.pricepoint{
+  display: flex;
+  flex-direction: column;
+
+}
+.pricepoint>span>img{
+  width: 15px;
+  padding: 5px;
+  border-radius: 50px;
+  background-color: #0dd62e;
+}
+.priceimggrey{
+  background-color: rgb(185, 185, 185) !important; 
+}
+.pricepoint>span{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 12px;
+  margin-bottom: 13px;
+}
+.pricebtn{
+  padding: 10px 20px;
+  width: 100%;
+  background-color: #1396e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 800px) {
+  .pricingcards{
+   gap: 1px;
+  
+  }
 }
