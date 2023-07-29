@@ -25,9 +25,10 @@ Banner and nav area
   background-size: cover;
 }
 nav {
+  display: none;
   max-width: 1200px;
   width: 100%;
-  display: flex;
+ 
   justify-content: space-between;
   margin: auto;
   align-items: center;
@@ -57,20 +58,24 @@ nav > h1 {
 }
 .banner {
   display: flex;
+  flex-direction: column;
   max-width: 1200px;
   justify-content: space-between;
   align-items: center;
   margin: auto;
   height: 700px;
+  padding: 10px;
 }
 .leftban {
-  width: 50%;
+  text-align: center;
 }
 .leftban > h1 {
   font-family: sans-serif;
   font-weight: 800;
   color: white;
-  font-size: 50px;
+  font-size: 25px;
+  margin: 0px;
+  line-height: 28px;
 }
 .leftban > p {
   color: white;
@@ -87,7 +92,7 @@ nav > h1 {
   border: none;
   border-radius: 50px;
   color: white;
-  font-size: 15px;
+  font-size: 10px;
   margin-right: 15px;
 }
 .rightbtn {
@@ -96,18 +101,18 @@ nav > h1 {
   border: 1px solid white;
   border-radius: 50px;
   color: white;
-  font-size: 15px;
+  font-size: 10px;
 }
 
 .rightban {
   background-color: rgb(255, 255, 255);
-  padding: 50px 35px;
+  padding: 10px 35px;
   display: flex;
   flex-direction: column;
-
   border-radius: 10px;
-  gap: 15px;
+  gap: 8px;
   font-family: sans-serif;
+  margin-bottom: 20px;
 }
 .rightban > h2 {
   font-size: 25px;
@@ -137,6 +142,80 @@ nav > h1 {
   color: white;
   font-size: 15px;
   margin-top: 15px;
+}
+
+.navsmall{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  max-width: 500px;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+}
+.navsmall>h1{
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.navsmall>img{
+  width: 50px;
+}
+
+@media (min-width: 800px) {
+  .navsmall{
+    display: none;
+  }
+  nav {
+display: flex;
+  }
+
+  .banner {
+   flex-direction: row;
+
+  }
+  .leftban > h1 {
+    font-family: sans-serif;
+    font-weight: 800;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 30px;
+    line-height: 57px;
+  }
+  .leftban {
+  text-align: left;
+  }
+  .leftbtn {
+    padding: 17px 30px;
+    background-color: #23a6f0;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+    margin-right: 15px;
+  }
+  .rightbtn {
+    padding: 17px 35px;
+    background-color: rgba(24, 143, 255, 0);
+    border: 1px solid white;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+  }
+  
+.rightban {
+  background-color: rgb(255, 255, 255);
+  padding: 50px 35px;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 10px;
+  gap: 15px;
+  font-family: sans-serif;
+  margin-bottom: 0px;
+}
+  
 }
 
 /*================
@@ -330,84 +409,79 @@ FAQ Area
   }
 }
 
-
 /*================
 Pricing Area
 ==================*/
 
-.pricing{
+.pricing {
   background-color: #f6f6f6;
   padding: 20px;
   font-family: poppins;
 }
-.pricingcards{
+.pricingcards {
   display: flex;
   flex-wrap: wrap;
   margin: 100px auto;
   justify-content: center;
   gap: 50px;
-
 }
-.pricingcarditem{
+.pricingcarditem {
   border: 2px solid #67c1f4;
   padding: 15px 30px;
   border-radius: 10px;
-  
 }
-.backcolor{
+.backcolor {
   background-color: #252b42;
   color: white;
   border: none;
   padding-top: 30px;
   margin-top: -30px;
 }
-.pricingcarditem>h2{
+.pricingcarditem > h2 {
   text-align: center;
   font-size: 23px;
- 
 }
-.pricingcarditem>p{
+.pricingcarditem > p {
   text-align: center;
   line-height: 16px;
   font-size: 12px;
 }
 
-.price{
+.price {
   display: flex;
   gap: 10px;
   justify-content: center;
   color: #1396e2;
   margin-bottom: 10px;
 }
-.price>h1{
+.price > h1 {
   font-size: 40px;
   margin: 0px;
 }
-.pricepara{
+.pricepara {
   margin-top: -4px;
 }
-.pricepoint{
+.pricepoint {
   display: flex;
   flex-direction: column;
-
 }
-.pricepoint>span>img{
+.pricepoint > span > img {
   width: 15px;
   padding: 5px;
   border-radius: 50px;
   background-color: #0dd62e;
 }
-.priceimggrey{
-  background-color: rgb(185, 185, 185) !important; 
+.priceimggrey {
+  background-color: rgb(185, 185, 185) !important;
 }
-.pricepoint>span{
+.pricepoint > span {
   display: flex;
   align-items: center;
   gap: 20px;
   font-size: 12px;
   margin-bottom: 13px;
 }
-.pricebtn{
+.pricebtn {
   padding: 10px 20px;
   width: 100%;
   background-color: #1396e2;
@@ -419,8 +493,116 @@ Pricing Area
 }
 
 @media (min-width: 800px) {
-  .pricingcards{
-   gap: 1px;
-  
+  .pricingcards {
+    gap: 1px;
   }
 }
+
+/*================
+Get in touch Area
+==================*/
+.getintouchmain {
+  background-color: #252b42;
+}
+.getintouch {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  font-family: poppins;
+  padding: 70px 20px;
+}
+.getleft > h1 {
+  color: white;
+  font-size: 30px;
+  margin: 0px;
+}
+.getleft > p {
+  color: white;
+  font-size: 10px;
+  font-weight: 300;
+  margin: 0px;
+}
+.getright {
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+}
+.getright > input {
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+}
+.getright > button {
+  padding: 16px;
+  border: none;
+  background-color: #1396e2;
+  color: white;
+  font-size: 12px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+/*================
+Footer Area
+==================*/
+
+.footer{
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 20px;
+  justify-content: center;
+  margin: auto;
+  justify-content: space-between;
+  font-family: poppins;
+
+}
+.footermenu{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footeritems>h3{
+  font-size: 20px;
+ }
+ .footeritems>p{
+  font-size: 13px;
+  line-height: 19px;
+  color: #6f6f6f;
+ }
+ .footermenu>a{
+  color: #6f6f6f;
+  text-decoration: none;
+  font-size: 13px;
+
+ }
+ .footericon{
+  width: 24px;
+  margin-top: 10px;
+  margin-right: 10px;
+ }
+
+ 
+/*================
+Copyright Area
+==================*/
+
+ .copyright{
+  background-color: #f6f6f6;
+  text-align: center;
+  font-family: poppins;
+  font-size: 16px;
+ padding: 10px;
+  color: grey;
+  
+ }
+ .copyright>h5{
+  font-weight: 500;
+ }
